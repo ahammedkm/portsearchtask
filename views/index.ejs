@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/awesomplete.css" />
+    <link rel="stylesheet" href="stylesheets/datepicker.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero is-light">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title has-text-centered">
+              Find the best freight rates
+            </h1>
+            <form class="search-form field has-addons"
+              onsubmit="return false;">
+              <div class="overlay"></div>
+              <p class="control">
+                <input id="from" class="autocomplete input is-fullwidth" type="text" name="from" placeholder="ORIGIN" autocomplete="off" role="combobox">
+              </p>
+              <p class="control">
+                <input id="to" class="autocomplete input is-fullwidth" type="text" name="to" placeholder="DESTINATION" autocomplete="off" role="combobox">
+              </p>
+              <p class="control">
+                <input id="date_range" class="input dtpicker" type="filght-date" name="dates" placeholder="DATE RANGE">
+              </p>
+              
+              <p class="control">
+                <button class="button is-primary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="search-errors"></section>
+      <section id="search-results">
+          <svg width="1200" height="500"></svg>
+      </section>
+      
+    </main>
+    
+    <script type="application/javascript" src="/javascripts/app.js"></script>
+   
+    </body>
+</html>
